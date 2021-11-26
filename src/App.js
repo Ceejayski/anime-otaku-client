@@ -2,6 +2,7 @@ import {
   BrowserRouter as Router, Routes,
   Route,
 } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import PrivateRoutes from './components/PrivateRoutes';
 import AdminPage from './pages/adminPage';
 import UserPage from './pages/homePage';
@@ -11,6 +12,7 @@ import SignupPage from './pages/signupPage';
 function App() {
   return (
     <Router>
+      <ToastContainer autoClose={2000} />
       <Routes>
         <Route exact path="/*" element={<UserPage />} />
         <Route

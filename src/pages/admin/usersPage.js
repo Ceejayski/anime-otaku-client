@@ -11,7 +11,6 @@ function UsersPage({ users, getusers }) {
 
   return (
     <div>
-      {console.log(users)}
       <AdminUsersTable data={users} />
     </div>
   );

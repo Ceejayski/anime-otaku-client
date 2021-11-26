@@ -1,4 +1,5 @@
 /* eslint-disable camelcase */
+import { toast } from 'react-toastify';
 import {
   GET_ADMIN_ANIME, GET_ADMIN_USER, SET_MESSAGE, MAKE_USER_ADMIN, DELETE_ANIME_ADMIN,
   REMOVE_USER_ADMIN, DELETE_USER_ADMIN, SET_MESSAGE_ARRAY, ANIME_SUCCESS,
@@ -14,7 +15,6 @@ export const adminAnime = () => (dispatch) => userServices.getAdminAnime().then(
   return Promise.resolve();
 },
 (error) => {
-  console.log('here');
   const message = (error.response
             && error.response.data
             && error.response.data.message)
@@ -58,17 +58,16 @@ export const makeUsersAdmin = (id) => (dispatch) => userServices.makeUserAdmin(i
       type: MAKE_USER_ADMIN,
       payload: { user: response.data, id },
     });
-
+    toast.success(`user ${id} has been made an admin`);
     return Promise.resolve();
   },
   (error) => {
-    console.log(error);
     const message = (error.response
             && error.response.data
             && error.response.data.message)
           || error.message
           || error.toString();
-
+    toast.error(message);
     dispatch({
       type: SET_MESSAGE,
       payload: message,
@@ -83,17 +82,16 @@ export const removeUsersAdmin = (id) => (dispatch) => userServices.removeUserAdm
       type: REMOVE_USER_ADMIN,
       payload: { user: response.data, id },
     });
-
+    toast.success(`user ${id} is no longer an admin`);
     return Promise.resolve();
   },
   (error) => {
-    console.log(error);
     const message = (error.response
             && error.response.data
             && error.response.data.message)
           || error.message
           || error.toString();
-
+    toast.error(message);
     dispatch({
       type: SET_MESSAGE,
       payload: message,
@@ -108,17 +106,16 @@ export const deleteUsers = (id) => (dispatch) => userServices.destroyAdminUsers(
       type: DELETE_USER_ADMIN,
       payload: { user: response.data, id },
     });
-
+    toast.success('User deleted');
     return Promise.resolve();
   },
   (error) => {
-    console.log(error);
     const message = (error.response
             && error.response.data
             && error.response.data.message)
           || error.message
           || error.toString();
-
+    toast.error('Error deleting user');
     dispatch({
       type: SET_MESSAGE,
       payload: message,
@@ -133,17 +130,16 @@ export const deleteAnime = (id) => (dispatch) => userServices.destroyAdminAnime(
       type: DELETE_ANIME_ADMIN,
       payload: { anime: response.data, id },
     });
-
+    toast.success('Anime deleted');
     return Promise.resolve();
   },
   (error) => {
-    console.log(error);
     const message = (error.response
             && error.response.data
             && error.response.data.message)
           || error.message
           || error.toString();
-
+    toast.error(message);
     dispatch({
       type: SET_MESSAGE,
       payload: message,
@@ -160,7 +156,7 @@ export const CreateAnime = (name, description,
       type: ANIME_SUCCESS,
       payload: { user: response.data },
     });
-
+    toast.success('Anime created');
     return Promise.resolve();
   },
   (error) => {
@@ -170,7 +166,7 @@ export const CreateAnime = (name, description,
           || error.response.data
           || error.message
           || error.toString();
-
+    toast.error('There are some errors creating Anime');
     dispatch({
       type: error.response.data ? SET_MESSAGE_ARRAY : SET_MESSAGE,
       payload: message,
@@ -187,7 +183,7 @@ export const UpdateAnime = (name, description,
       type: ANIME_SUCCESS,
       payload: { user: response.data },
     });
-
+    toast.success('Anime Updated');
     return Promise.resolve();
   },
   (error) => {
@@ -197,7 +193,7 @@ export const UpdateAnime = (name, description,
             || error.response.data
             || error.message
             || error.toString();
-
+    toast.error('There are some errors updating Anime');
     dispatch({
       type: error.response.data ? SET_MESSAGE_ARRAY : SET_MESSAGE,
       payload: message,

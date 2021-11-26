@@ -57,14 +57,13 @@ const postAdminAnime = async (
   data.append('rating', rating);
   data.append('genre_list', genre_list);
   data.append('header_image', header_image);
-  console.log(data);
   const response = await axios.post('https://anime-otaku-rails.herokuapp.com/api/v1/admin/animes', data, { headers });
   return response.data;
 };
 
-const updateAdminAnime = async ({
+const updateAdminAnime = async (
   name, description, rating, genre_list, animeId,
-}) => {
+) => {
   const body = {
     name, description, rating, genre_list,
   };

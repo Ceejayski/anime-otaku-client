@@ -1,6 +1,7 @@
+/* eslint-disable camelcase */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import CreatableSelect from 'react-select/creatable';
 import { useForm, Controller } from 'react-hook-form';
@@ -11,6 +12,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { CreateAnime, UpdateAnime } from '../../redux/actions/adminAnimes';
 import './style.scss';
+import userServices from '../../auth/users.service';
 
 function AdminAnimeForm({ createAnime, updateAnime }) {
   const { id } = useParams();
@@ -23,7 +25,7 @@ function AdminAnimeForm({ createAnime, updateAnime }) {
       .max(5.0, 'Max value 5.0.'),
   }).required();
   const {
-    register, handleSubmit, reset, formState, control,
+    register, handleSubmit, reset, formState, control, setValue,
   } = useForm({
     resolver: yupResolver(schema),
   });
@@ -44,6 +46,23 @@ function AdminAnimeForm({ createAnime, updateAnime }) {
       updateAnime(data.name, data.description, data.rating, genreList, id);
     }
   };
+
+  useEffect(() => {
+    if (!updateMode) {
+      userServices.showUserAnime(id).then((res) => {
+        const {
+          name, description, rating, genre_list,
+        } = res.data.data.attributes;
+        const genresList = [];
+        genre_list.forEach((genre) => genresList.push({ label: genre, value: genre }));
+        setValue('name', name);
+        setValue('description', description);
+        setValue('rating', rating);
+        setValue('genre_list', genresList);
+      });
+    }
+  }, []);
+
   return (
     <Form onSubmit={handleSubmit(onSubmit)} onReset={reset} className="main-form">
       <Card>

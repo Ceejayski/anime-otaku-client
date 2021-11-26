@@ -11,7 +11,6 @@ function AnimePage({ animes, getanime }) {
 
   return (
     <div>
-      {console.log(animes)}
       <AdminAnimeTable data={animes} />
     </div>
   );

@@ -26,7 +26,6 @@ const logout = () => {
 const register = async ({
   username, email, password, password_confirmation,
 }) => {
-  console.log(`${password}${email}`);
   const response = await axios
     .post(`${API_URL}sign_up`, {
       data: {

@@ -8,6 +8,7 @@ import {
   SidebarFooter,
   SidebarContent,
 } from 'react-pro-sidebar';
+import { toast } from 'react-toastify';
 import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -24,7 +25,6 @@ export default function PhoneSideBar({ handleClick }) {
       <ProSidebar>
         <SidebarHeader>
           <div className="logotext ms-3 mt-2 d-flex justify-content-between align-items-center" style={{ textTransform: 'capitalize' }}>
-            {/* small and big change using menucollapse state */}
             <p className="mb-0">{isLoggedIn ? user.username : 'AnimeOtaku'}</p>
             <button type="button" aria-label="toggle" className="btn" style={{ border: 0, outline: 'none' }} onClick={() => handleClick(true)}><i className="fas fa-bars" /></button>
           </div>
@@ -59,7 +59,7 @@ export default function PhoneSideBar({ handleClick }) {
                   </Link>
                 </MenuItem>
                 ) }
-                <MenuItem><Link to={`/users/${user.id}/favourite`} className="w-100">Favourite </Link></MenuItem>
+                <MenuItem><Link to={`/users/${user.id}/favourite`} className="w-100">Favorites </Link></MenuItem>
               </>
             )}
 
@@ -74,10 +74,11 @@ export default function PhoneSideBar({ handleClick }) {
                   className="footer-btn"
                   onClick={() => {
                     AuthService.logout();
-
+                    toast.success('Logged out successfully');
                     dispatch({
                       type: 'LOGOUT',
                     });
+                    handleClick(true);
                   }}
                 >
                   <MenuItem>Logout</MenuItem>

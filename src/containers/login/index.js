@@ -140,7 +140,6 @@ class Login extends Component {
               <div className="form-group">
                 <div className="alert alert-danger" role="alert">
                   {message}
-                  {console.log(message)}
                 </div>
               </div>
               )}

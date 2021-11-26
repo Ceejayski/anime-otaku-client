@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify';
 import {
   REGISTER_FAIL,
   LOGIN_SUCCESS,
@@ -18,7 +19,7 @@ export const register = (username, email,
       type: LOGIN_SUCCESS,
       payload: { user: response },
     });
-
+    toast.success('Registered successfully');
     dispatch({
       type: SET_MESSAGE,
       payload: response.data.message,
@@ -26,6 +27,7 @@ export const register = (username, email,
     return Promise.resolve();
   },
   (error) => {
+    toast.error('Sign up failed with some errors');
     const message = (error.response
           && error.response.data
           && error.response.data.message)
@@ -52,11 +54,11 @@ export const login = (email, password) => (dispatch) => AuthService.login(email,
       type: LOGIN_SUCCESS,
       payload: { user: data },
     });
-
+    toast.success('Logged in successfully');
     return Promise.resolve();
   },
   (error) => {
-    console.log(error.response);
+    toast.error('Login error');
     const message = (error.response
           && error.response.data
           && error.response.data.message)

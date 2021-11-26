@@ -12,6 +12,7 @@ export default function AdminSideBar() {
     <div className="admin-sidebar">
       <ProSidebar style={{ minWidth: 'none' }}>
         <Menu iconShape="square">
+          <MenuItem><Link to="/"> Home</Link></MenuItem>
           <MenuItem><Link to="/admin"> Users</Link></MenuItem>
           <SubMenu title="Animes">
             <MenuItem>
