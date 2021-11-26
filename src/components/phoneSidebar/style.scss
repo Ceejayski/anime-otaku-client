@@ -1,0 +1,22 @@
+.phone-sidebar {
+  float: left;
+  height: 100vh;
+  position: absolute;
+
+  .footer-btn {
+    background-color: transparent !important;
+    border: 0;
+    width: 100%;
+    text-align: start;
+  }
+
+  .pro-sidebar {
+    width: 200px;
+    min-width: 200px;
+  }
+
+  .pro-sidebar-inner {
+    background-color: #f7f5fa;
+    color: #494747;
+  }
+}

@@ -5,4 +5,12 @@ export const LOGIN_FAIL = 'LOGIN_FAIL';
 export const LOGOUT = 'LOGOUT';
 
 export const SET_MESSAGE = 'SET_MESSAGE';
+export const GET_ADMIN_ANIME = 'GET_ADMIN_ANIME';
+export const GET_ADMIN_USER = 'GET_ADMIN_USER';
 export const CLEAR_MESSAGE = 'CLEAR_MESSAGE';
+export const SET_MESSAGE_ARRAY = 'SET_MESSAGE_ARRAY';
+export const MAKE_USER_ADMIN = 'MAKE_USER_ADMIN';
+export const REMOVE_USER_ADMIN = 'REMOVE_USER_ADMIN';
+export const DELETE_USER_ADMIN = 'DELETE_USER_ADMIN';
+export const ANIME_SUCCESS = 'ANIME_SUCCESS';
+export const DELETE_ANIME_ADMIN = 'DELETE_ANIME_ADMIN';

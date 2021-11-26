@@ -1,3 +1,4 @@
+/* eslint-disable quote-props */
 /* eslint-disable camelcase */
 import axios from 'axios';
 import authHeader from './auth.headers';
@@ -9,10 +10,17 @@ const getPublicContent = () => axios.get(`${API_URL}houses`);
 const getUserboard = (userId) => (
   axios.get(`${API_URL}users/${userId}/favourites`, { headers: authHeader() })
 );
-
-const getAdminboard = () => (
-  axios.get(`${API_URL}admin/users`, { headers: authHeader('admin') })
+const getUserAnime = () => (
+  axios.get(`${API_URL}animes`)
 );
+const showUserAnime = (userId) => (
+  axios.get(`${API_URL}animes/${userId}`)
+);
+
+const getAdminboard = async () => {
+  const response = await axios.get(`${API_URL}admin/users`, { headers: authHeader('admin') });
+  return response.data;
+};
 
 const destroyAdminUsers = async (userId) => {
   const response = await axios({
@@ -23,41 +31,42 @@ const destroyAdminUsers = async (userId) => {
   return response.data;
 };
 
-const getAdminAnime = () => (
-  axios.get(`${API_URL}admin/animes`, { headers: authHeader('admin') })
-);
+const getAdminAnime = async () => {
+  const response = await axios.get(`${API_URL}admin/animes`, { headers: authHeader('admin') });
+  return response.data;
+};
 
-const makeUserAdmin = (userId) => (
-  axios.patch(`${API_URL}admin/make_admin/${userId}`, { headers: authHeader('admin') })
-);
+const makeUserAdmin = async (userId) => {
+  const response = await axios.patch(`${API_URL}admin/make_admin/${userId}`, null, { headers: authHeader('admin') });
+  return response.data;
+};
 
-const removeUserAdmin = (userId) => (
-  axios.patch(`${API_URL}admin/remove_admin/${userId}`, { headers: authHeader('admin') })
-);
+const removeUserAdmin = async (userId) => {
+  const response = await axios.patch(`${API_URL}admin/remove_admin/${userId}`, null, { headers: authHeader('admin') });
+  return response.data;
+};
 
-const postAdminAnime = async ({
+const postAdminAnime = async (
   name, description, rating, header_image, genre_list,
-}) => {
-  const body = {
-    data: {
-      attributes: {
-        name, description, rating, header_image, genre_list,
-      },
-    },
-  };
-  const response = await axios.post(`${API_URL}admin/animes`, body, { headers: authHeader('admin') });
+) => {
+  const admin = JSON.parse(localStorage.getItem('admin'));
+  const headers = { 'Content-Type': 'multipart/form-data', 'Authorization': `Bearer ${admin.auth_token}` };
+  const data = new FormData();
+  data.append('name', name);
+  data.append('description', description);
+  data.append('rating', rating);
+  data.append('genre_list', genre_list);
+  data.append('header_image', header_image);
+  console.log(data);
+  const response = await axios.post('https://anime-otaku-rails.herokuapp.com/api/v1/admin/animes', data, { headers });
   return response.data;
 };
 
 const updateAdminAnime = async ({
-  name, description, rating, header_image, genre_list, animeId,
+  name, description, rating, genre_list, animeId,
 }) => {
   const body = {
-    data: {
-      attributes: {
-        name, description, rating, header_image, genre_list,
-      },
-    },
+    name, description, rating, genre_list,
   };
   const response = await axios.patch(`${API_URL}admin/animes/${animeId}`, body, { headers: authHeader('admin') });
   return response.data;
@@ -113,6 +122,8 @@ const userServices = {
   postAdminAnime,
   updateAdminAnime,
   destroyAdminAnime,
+  getUserAnime,
+  showUserAnime,
 };
 
 export default userServices;

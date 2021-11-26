@@ -1,0 +1,10 @@
+.register-background-overlay {
+  background: 
+    /* top, transparent red, faked with gradient */ linear-gradient(
+      rgba(255, 255, 255, 0.55),
+      rgba(255, 255, 255, 0.55)
+    ),
+    url(./slide.jpg) top center /* position / size */ no-repeat /* repeat */
+      fixed;
+  background-size: cover;
+}

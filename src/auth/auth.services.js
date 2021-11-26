@@ -3,19 +3,15 @@ import axios from 'axios';
 
 const API_URL = 'https://anime-otaku-rails.herokuapp.com/api/v1/';
 
-const login = async ({ email, password }) => {
-  console.log(`${password}${email}`);
+const login = async (email, password) => {
   const response = await axios
     .post(`${API_URL}login`, {
-      data: {
-        attributes: {
-          email,
-          password,
-        },
-      },
+      email,
+      password,
     });
   if (response.data.admin) {
     localStorage.setItem('admin', JSON.stringify(response.data));
+    localStorage.setItem('user', JSON.stringify(response.data));
   } else if (!response.data.admin) {
     localStorage.setItem('user', JSON.stringify(response.data));
   }
@@ -27,10 +23,10 @@ const logout = () => {
   localStorage.removeItem('admin');
 };
 
-// eslint-disable-next-line camelcase
 const register = async ({
   username, email, password, password_confirmation,
 }) => {
+  console.log(`${password}${email}`);
   const response = await axios
     .post(`${API_URL}sign_up`, {
       data: {
