@@ -1,12 +1,12 @@
 /* eslint-disable react/jsx-one-expression-per-line */
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Carousel from 'react-multi-carousel';
 import { userAnime } from '../../redux/actions/adminAnimes';
 import AnimeCard from '../animeCard';
 
-const AnimeCarousel = ({ anime, getUserAnime, user }) => {
+const AnimeCarousel = ({ anime, getUserAnime }) => {
   const [slide, setSlide] = useState(1);
   const responsive = {
     desktop: {
@@ -25,7 +25,6 @@ const AnimeCarousel = ({ anime, getUserAnime, user }) => {
       paritialVisibilityGutter: 20,
     },
   };
-  const slideRef = useRef();
   useEffect(() => {
     getUserAnime();
   }, [getUserAnime]);
@@ -33,14 +32,13 @@ const AnimeCarousel = ({ anime, getUserAnime, user }) => {
   return (
     <>
       <h3 className="text-center">Top Anime</h3>
-      <div className="w-100 pb-5" id="animes">
+      <div className="w-100" id="animes">
         {anime.length > 0 && (
           <>
             <Carousel
               ssr
               partialVisbile
               itemClass="image-item"
-              ref={slideRef}
               responsive={responsive}
               afterChange={(previousSlide, { currentSlide }) => {
                 setSlide(currentSlide + 1);
@@ -55,8 +53,6 @@ const AnimeCarousel = ({ anime, getUserAnime, user }) => {
             </p>
           </>
         )}
-        {console.log(slideRef)}
-        {console.log(user)}
       </div>
     </>
   );
@@ -64,7 +60,6 @@ const AnimeCarousel = ({ anime, getUserAnime, user }) => {
 
 AnimeCarousel.propTypes = {
   getUserAnime: PropTypes.func.isRequired,
-  user: PropTypes.shape().isRequired,
   anime: PropTypes.arrayOf(Object).isRequired,
 };
 

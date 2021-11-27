@@ -3,6 +3,7 @@ import {
   Route,
 } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
+import Footer from './components/footer';
 import PrivateRoutes from './components/PrivateRoutes';
 import AdminPage from './pages/adminPage';
 import UserPage from './pages/homePage';
@@ -26,6 +27,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

@@ -8,7 +8,7 @@ export default function HomePage() {
     <div className="user-page">
       <Jumbroton />
       {/* <div style={{ minWidth: '400px' }}>here</div> */}
-      <Container>
+      <Container className="px-3">
         <AnimeCarousel />
       </Container>
     </div>

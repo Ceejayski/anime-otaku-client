@@ -1,9 +1,5 @@
 export const animeFinder = (animeList, slug) => {
-  animeList.filter((single) => {
-    console.log(single.attributes.slug === slug);
-
-    return single.attributes.slug === slug;
-  });
+  animeList.filter((single) => single.attributes.slug === slug);
 };
 
 export const handleMakeAdmin = ({ id, users }) =>

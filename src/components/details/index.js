@@ -10,7 +10,7 @@ function Details({ data, favorite, addFave, removeFave }) {
   const { user } = useSelector((state) => state.auth);
   const { name, rating, genre_list, header_image, description } = data.attributes;
   return (
-    <div style={{ marginTop: '30px' }} className="position-relative anime-data pb-4">
+    <div style={{ marginTop: '30px' }} className="position-relative anime-data">
       <div className="position-relative">
         <img
           src={header_image.url ? header_image.url : PlaceHolder}

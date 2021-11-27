@@ -4,12 +4,12 @@ import StarRating from 'react-svg-star-rating';
 import './style.scss';
 import { Link } from 'react-router-dom';
 
-function AnimeCard({ data }) {
+function AnimeCard({ data, main }) {
   const { name, header_image, rating, genre_list, slug } = data.attributes;
   return (
-    <div className="py-5">
+    <div className={main === 'home' ? 'py-5' : 'py-2'}>
       <Link to={`/animes/${slug}`}>
-        <div className="anime-card card">
+        <div className={`anime-card card ${main === 'home' ? '' : 'w-100'}`}>
           {header_image.url != null ? (
             <img src={header_image.thumbnail.url} className="card-img-top" alt={data.id} />
           ) : (
@@ -35,8 +35,13 @@ function AnimeCard({ data }) {
   );
 }
 
+AnimeCard.defaultProps = {
+  main: 'home',
+};
+
 AnimeCard.propTypes = {
   data: PropTypes.shape().isRequired,
+  main: PropTypes.string,
 };
 
 export default AnimeCard;
