@@ -13,6 +13,7 @@ code {
 
 a {
   text-decoration: none !important;
+  color: inherit !important;
 }
 
 header a,
@@ -58,4 +59,9 @@ header p {
 
 .w-90 {
   width: 90% !important;
+}
+
+.react-multi-carousel-item--active {
+  transform: scaleY(1.04);
+  transition: all 0.6s ease;
 }

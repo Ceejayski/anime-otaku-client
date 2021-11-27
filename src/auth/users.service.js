@@ -1,5 +1,4 @@
 /* eslint-disable quote-props */
-/* eslint-disable camelcase */
 import axios from 'axios';
 import authHeader from './auth.headers';
 
@@ -8,7 +7,7 @@ const API_URL = 'https://anime-otaku-rails.herokuapp.com/api/v1/';
 const getPublicContent = () => axios.get(`${API_URL}houses`);
 
 const getUserboard = (userId) => (
-  axios.get(`${API_URL}users/${userId}/favourites`, { headers: authHeader() })
+  axios.get(`${API_URL}users/${userId}/favourite`, { headers: authHeader() })
 );
 const getUserAnime = () => (
   axios.get(`${API_URL}animes`)
@@ -82,25 +81,23 @@ const destroyAdminAnime = async (animeId) => {
 
 const getUserfavourites = async (userId) => {
   const response = await axios
-    .get(`${API_URL}users/${userId}/favourites`,
+    .get(`${API_URL}users/${userId}/favourite`,
       { headers: authHeader() });
   return response.data;
 };
 
 const addUserfavourite = async (houseId) => {
   const response = await axios
-    .post(`${API_URL}animes/${houseId}/favourites`,
+    .post(`${API_URL}animes/${houseId}/favourites`, null,
       { headers: authHeader() });
 
   return response.data;
 };
 
-const removeUserfavourite = async (userId, houseId) => {
-  const favourites = await getUserfavourites(userId);
-  const favourite = favourites.find((favourite) => favourite.house_id === houseId);
+const removeUserfavourite = async (userId, animeId) => {
   const response = await axios({
     method: 'delete',
-    url: `${API_URL}animes/${houseId}/favourites/${favourite.id}`,
+    url: `${API_URL}users/${userId}/remove_favorite/${animeId}`,
     headers: authHeader(),
   });
 

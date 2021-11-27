@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Button,
   Container, Nav, Navbar,
@@ -10,9 +10,10 @@ import Logo from '../../assets/images/logo.png';
 // import { logout } from '../../redux/actions/auth';
 import AuthService from '../../auth/auth.services';
 import PhoneSideBar from '../phoneSidebar';
+import { getFavoriteAnime } from '../../redux/actions/adminAnimes';
 
 function NavBar(props) {
-  const { isLoggedIn, user } = props;
+  const { isLoggedIn, user, getFave } = props;
   const [scroll, setScroll] = useState(false);
   const [hidden, setHidden] = useState(true);
   const dispatch = useDispatch();
@@ -23,6 +24,12 @@ function NavBar(props) {
       setScroll(false);
     }
   };
+
+  useEffect(() => {
+    if (user) {
+      getFave(user.id);
+    }
+  }, []);
 
   window.addEventListener('scroll', changeBackground);
   return (
@@ -112,6 +119,7 @@ NavBar.defaultProps = {
 
 NavBar.propTypes = {
   isLoggedIn: PropTypes.bool.isRequired,
+  getFave: PropTypes.func.isRequired,
   user: PropTypes.shape(),
 };
 
@@ -123,4 +131,8 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(NavBar);
+const mapDispatchToProps = {
+  getFave: getFavoriteAnime,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);

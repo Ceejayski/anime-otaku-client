@@ -20,13 +20,25 @@ export default function PhoneSideBar({ handleClick }) {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.auth.user);
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+  const favorites = useSelector((state) => state.adminboard.favorites);
   return (
     <div className="phone-sidebar">
       <ProSidebar>
         <SidebarHeader>
-          <div className="logotext ms-3 mt-2 d-flex justify-content-between align-items-center" style={{ textTransform: 'capitalize' }}>
+          <div
+            className="logotext ms-3 mt-2 d-flex justify-content-between align-items-center"
+            style={{ textTransform: 'capitalize' }}
+          >
             <p className="mb-0">{isLoggedIn ? user.username : 'AnimeOtaku'}</p>
-            <button type="button" aria-label="toggle" className="btn" style={{ border: 0, outline: 'none' }} onClick={() => handleClick(true)}><i className="fas fa-bars" /></button>
+            <button
+              type="button"
+              aria-label="toggle"
+              className="btn"
+              style={{ border: 0, outline: 'none' }}
+              onClick={() => handleClick(true)}
+            >
+              <i className="fas fa-bars" />
+            </button>
           </div>
         </SidebarHeader>
         <SidebarContent>
@@ -36,38 +48,46 @@ export default function PhoneSideBar({ handleClick }) {
                 Home
               </Link>
             </MenuItem>
-            { !isLoggedIn && (
-            <>
-              <MenuItem>
-                <Link to="/signup" className="w-100">
-                  Sign up
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                <Link to="/login" className="w-100">
-                  Login
-                </Link>
-              </MenuItem>
-            </>
-            )}
-            { isLoggedIn && (
+            {!isLoggedIn && (
               <>
-                { user.admin && (
                 <MenuItem>
-                  <Link to="/admin" className="w-100">
-                    Admin Dashboard
+                  <Link to="/signup" className="w-100">
+                    Sign up
                   </Link>
                 </MenuItem>
-                ) }
-                <MenuItem><Link to={`/users/${user.id}/favourite`} className="w-100">Favorites </Link></MenuItem>
+                <MenuItem>
+                  <Link to="/login" className="w-100">
+                    Login
+                  </Link>
+                </MenuItem>
               </>
             )}
+            {isLoggedIn && (
+              <>
+                {user.admin && (
+                  <MenuItem>
+                    <Link to="/admin" className="w-100">
+                      Admin Dashboard
+                    </Link>
+                  </MenuItem>
+                )}
+                <MenuItem>
 
+                  <Link to={`/users/${user.id}/favourite`} className="w-100">
+                    Favorites
+                    {' '}
+                  </Link>
+                  <div className="badge rounded-pill bg-danger ms-4">
+                    {favorites.length}
+                    <span className="visually-hidden">unread messages</span>
+                  </div>
+                </MenuItem>
+              </>
+            )}
           </Menu>
         </SidebarContent>
-        { isLoggedIn && (
+        {isLoggedIn && (
           <SidebarFooter>
-
             <Menu>
               <>
                 <Button
@@ -86,7 +106,7 @@ export default function PhoneSideBar({ handleClick }) {
               </>
             </Menu>
           </SidebarFooter>
-        ) }
+        )}
       </ProSidebar>
     </div>
   );

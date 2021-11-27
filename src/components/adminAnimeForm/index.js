@@ -17,13 +17,13 @@ import userServices from '../../auth/users.service';
 function AdminAnimeForm({ createAnime, updateAnime }) {
   const { id } = useParams();
   const updateMode = !id;
-  const schema = yup.object({
-    name: yup.string().required('Title is required'),
-    description: yup.string().required('Description is required'),
-    rating: yup.number()
-      .min(0, 'Min value 0.')
-      .max(5.0, 'Max value 5.0.'),
-  }).required();
+  const schema = yup
+    .object({
+      name: yup.string().required('Title is required'),
+      description: yup.string().required('Description is required'),
+      rating: yup.number().min(0.0, 'Min value 0.0').max(5.0, 'Max value 5.0.'),
+    })
+    .required();
   const {
     register, handleSubmit, reset, formState, control, setValue,
   } = useForm({
@@ -68,37 +68,51 @@ function AdminAnimeForm({ createAnime, updateAnime }) {
       <Card>
         <h4 className="text-center mb-3">{updateMode ? 'Create New Anime' : 'Edit Anime'}</h4>
         <Form.Group className="mb-3">
-          <label htmlFor="name">
-            Title
-          </label>
-          <input type="text" name="name" id="name" {...register('name')} className={`form-control ${formState.errors.name ? 'is-invalid' : ''}`} />
-          <Form.Text className="text-muted">
-            {formState.errors.name?.message}
-          </Form.Text>
+          <label htmlFor="name">Title</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            {...register('name')}
+            className={`form-control ${formState.errors.name ? 'is-invalid' : ''}`}
+          />
+          <Form.Text className="text-muted">{formState.errors.name?.message}</Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicdescription">
           <label htmlFor="description" className="form-label">
             Description
           </label>
-          <textarea name="description" id="description" {...register('description')} cols="50" className={`form-control ${formState.errors.description ? 'is-invalid' : ''}`} rows="20" />
-          <Form.Text className="text-muted">
-            {formState.errors.description?.message}
-          </Form.Text>
+          <textarea
+            name="description"
+            id="description"
+            {...register('description')}
+            cols="50"
+            className={`form-control ${formState.errors.description ? 'is-invalid' : ''}`}
+            rows="20"
+          />
+          <Form.Text className="text-muted">{formState.errors.description?.message}</Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicrating">
           <label htmlFor="rating" className="form-label">
             Rating
           </label>
-          <input type="number" name="rating" id="rating" {...register('rating')} className={`form-control ${formState.errors.rating ? 'is-invalid' : ''}`} />
-          <Form.Text className="text-muted">
-            {formState.errors.rating?.message}
-          </Form.Text>
+          <input
+            type="number"
+            name="rating"
+            id="rating"
+            {...register('rating')}
+            className={`form-control ${formState.errors.rating ? 'is-invalid' : ''}`}
+          />
+          <Form.Text className="text-muted">{formState.errors.rating?.message}</Form.Text>
         </Form.Group>
         <Form.Group className={`mb-3 ${!updateMode ? 'd-none' : ''}`}>
-          <Form.Label>
-            Anime image
-          </Form.Label>
-          <Form.Control type="file" name="header_image" {...register('header_image')} id="header_image" />
+          <Form.Label>Anime image</Form.Label>
+          <Form.Control
+            type="file"
+            name="header_image"
+            {...register('header_image')}
+            id="header_image"
+          />
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label>
@@ -107,12 +121,7 @@ function AdminAnimeForm({ createAnime, updateAnime }) {
               control={control}
               name="genre_list"
               render={({ field }) => (
-                <CreatableSelect
-                  options={options}
-                  isMulti
-                  className="w-100"
-                  {...field}
-                />
+                <CreatableSelect options={options} isMulti className="w-100" {...field} />
               )}
             />
           </Form.Label>
@@ -122,7 +131,9 @@ function AdminAnimeForm({ createAnime, updateAnime }) {
             {formState.isSubmitting && <span className="spinner-border spinner-border-sm mr-1" />}
             {updateMode ? 'Create' : 'Update'}
           </button>
-          <Link to={updateMode ? '.' : '..'} className="btn btn-link">Cancel</Link>
+          <Link to={updateMode ? '.' : '..'} className="btn btn-link">
+            Cancel
+          </Link>
         </div>
       </Card>
     </Form>

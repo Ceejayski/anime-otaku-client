@@ -1,0 +1,25 @@
+.anime-card {
+  width: 90%;
+
+  img {
+    height: 18.2em !important;
+  }
+
+  .card-genre {
+    display: inline-block !important;
+    background-color: #ec5200;
+    font-size: 0.65em !important;
+    padding: 1px 3px;
+    color: white !important;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .anime-card {
+    width: 16em;
+    margin-right: 10px;
+    img {
+      height: 16.2em !important;
+    }
+  }
+}
