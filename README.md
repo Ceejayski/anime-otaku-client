@@ -42,7 +42,7 @@
 ## Live Demo Link <a name = "live-demo"></a>
 
 ## See Live
-See live on [Netlify](https://silly-golick-1cef53.netlify.app/login)
+See live on [Netlify](https://silly-golick-1cef53.netlify.app)
 
 
 ## Available Scripts <a name= "available-scripts"></a>
