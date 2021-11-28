@@ -37,7 +37,7 @@ const AnimeCarousel = ({ anime, getUserAnime }) => {
           <>
             <Carousel
               ssr
-              partialVisbile
+              partialVisible
               itemClass="image-item"
               responsive={responsive}
               afterChange={(previousSlide, { currentSlide }) => {
