@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Correctly 1`] = `
+<div
+  className="background-overlay container"
+>
+  <div
+    className="d-flex justify-content-center align-items-center w-100 mb-auto"
+    style={
+      Object {
+        "height": "100vh",
+        "marginTop": "-40px",
+      }
+    }
+  >
+    <div
+      className=" border-0 w-100"
+      style={
+        Object {
+          "maxWidth": "300px",
+        }
+      }
+    >
+      <h4
+        className="text-center"
+      >
+        Login
+      </h4>
+      <p
+        className="text-center"
+      >
+        Hey there, Sign in and we take it up from there
+      </p>
+      <form
+        className="w-100 mb-5"
+        onSubmit={[Function]}
+      >
+        <div
+          className="form-group mb-4"
+        >
+          <div>
+            <input
+              className="form-control"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Email"
+              style={
+                Object {
+                  "borderRadius": "25px",
+                }
+              }
+              type="email"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="form-group mb-4"
+        >
+          <div>
+            <input
+              className="form-control"
+              name="password"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Password"
+              style={
+                Object {
+                  "borderRadius": "25px",
+                }
+              }
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="form-group text-center"
+        >
+          <button
+            className="btn btn-primary btn-block btn-lg border-0"
+            disabled={false}
+            style={
+              Object {
+                "backgroundColor": "#FF5617",
+                "borderRadius": "25px",
+              }
+            }
+            type="submit"
+          >
+            <span>
+              Login
+            </span>
+          </button>
+        </div>
+        <button
+          disabled={true}
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        />
+      </form>
+      <p
+        className="text-center"
+      >
+         
+        Register new Account?
+         
+        <a
+          href="/signup"
+          onClick={[Function]}
+        >
+          Create Account
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+`;

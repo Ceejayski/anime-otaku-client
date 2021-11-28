@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Favorites from '../../components/favorites';
+import Favorites from '../../containers/favorites';
 
 export default function UserFavouritePage() {
   return (

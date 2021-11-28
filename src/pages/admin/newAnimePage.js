@@ -1,5 +1,5 @@
 import React from 'react';
-import AdminAnimeForm from '../../components/adminAnimeForm';
+import AdminAnimeForm from '../../containers/adminAnimeForm';
 
 export default function NewAnimePage() {
   return (

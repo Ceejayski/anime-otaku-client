@@ -7,7 +7,12 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Courier New",
     monospace;
 }
 
@@ -22,6 +27,14 @@ header p {
   color: inherit !important;
 }
 
+.nav-link {
+  border-radius: 25px !important;
+  display: flex !important;
+  justify-content: center !important;
+  width: 120px;
+  margin-right: 10px;
+}
+
 .bg-light .nav-link {
   color: #212529 !important;
 }
@@ -33,14 +46,6 @@ header p {
 .nav-btn {
   background-color: transparent !important;
   border: none !important;
-}
-
-.nav-link {
-  border-radius: 25px !important;
-  display: flex !important;
-  justify-content: center !important;
-  width: 120px;
-  margin-right: 10px;
 }
 
 .nav-link:hover {

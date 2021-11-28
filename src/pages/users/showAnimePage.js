@@ -1,5 +1,5 @@
 import React from 'react';
-import AnimeDetails from '../../components/singleAnimeDetails';
+import AnimeDetails from '../../containers/singleAnimeDetails';
 
 export default function ShowAnimePage() {
   return (

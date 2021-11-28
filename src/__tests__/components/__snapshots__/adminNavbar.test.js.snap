@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Correctly 1`] = `
+<div>
+  <nav
+    className="navbar navbar-expand navbar-light bg-light"
+  >
+    <div
+      className="container"
+    >
+      <a
+        className="brand navbar-brand ms-3"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="logo"
+          className="d-inline-block align-top"
+          height="40"
+          src="logo.png"
+        />
+        <span
+          className="ms-1 h5 ceviche"
+          style={
+            Object {
+              "color": "#EC5200",
+              "fontSize": "1.4em",
+              "lineHeight": "40px",
+            }
+          }
+        >
+          OTAKU
+        </span>
+      </a>
+      <button
+        aria-controls="basic-navbar-nav"
+        aria-label="Toggle navigation"
+        className="navbar-toggler collapsed"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        aria-expanded={null}
+        className="navbar-collapse collapse"
+        id="basic-navbar-nav"
+      >
+        <div
+          className="mx-auto w-50"
+        />
+      </div>
+    </div>
+  </nav>
+</div>
+`;

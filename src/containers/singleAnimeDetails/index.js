@@ -9,7 +9,7 @@ import {
   getFavoriteAnime,
   removeFavoriteAnime,
 } from '../../redux/actions/adminAnimes';
-import Details from '../details';
+import Details from '../../components/details';
 // import { animeFinder } from '../../redux/utils/action.utils';
 
 const AnimeDetails = ({ favorites, getFave, addFave, removeFave, user }) => {

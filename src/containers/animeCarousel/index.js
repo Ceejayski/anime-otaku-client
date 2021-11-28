@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Carousel from 'react-multi-carousel';
 import { userAnime } from '../../redux/actions/adminAnimes';
-import AnimeCard from '../animeCard';
+import AnimeCard from '../../components/animeCard';
 
 const AnimeCarousel = ({ anime, getUserAnime }) => {
   const [slide, setSlide] = useState(1);

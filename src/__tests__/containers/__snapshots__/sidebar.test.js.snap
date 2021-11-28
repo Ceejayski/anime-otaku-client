@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Correctly 1`] = `
+<div
+  className="phone-sidebar"
+>
+  <div
+    className="pro-sidebar"
+    style={Object {}}
+  >
+    <div
+      className="pro-sidebar-inner"
+    >
+      <div
+        className="pro-sidebar-layout"
+      >
+        <div
+          className="pro-sidebar-header"
+        >
+          <div
+            className="logotext ms-3 mt-2 d-flex justify-content-between align-items-center"
+            style={
+              Object {
+                "textTransform": "capitalize",
+              }
+            }
+          >
+            <p
+              className="mb-0"
+            >
+              AnimeOtaku
+            </p>
+            <button
+              aria-label="toggle"
+              className="btn"
+              onClick={[Function]}
+              style={
+                Object {
+                  "border": 0,
+                  "outline": "none",
+                }
+              }
+              type="button"
+            >
+              <i
+                className="fas fa-bars"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          className="pro-sidebar-content"
+        >
+          <nav
+            className="pro-menu inner-submenu-arrows"
+          >
+            <ul>
+              <li
+                className="pro-menu-item"
+              >
+                <div
+                  className="pro-inner-item"
+                  role="button"
+                  tabIndex={0}
+                >
+                  <span
+                    className="pro-item-content"
+                  >
+                    <a
+                      className="w-100"
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      Home
+                    </a>
+                  </span>
+                </div>
+              </li>
+              <li
+                className="pro-menu-item"
+              >
+                <div
+                  className="pro-inner-item"
+                  role="button"
+                  tabIndex={0}
+                >
+                  <span
+                    className="pro-item-content"
+                  >
+                    <a
+                      className="w-100"
+                      href="/signup"
+                      onClick={[Function]}
+                    >
+                      Sign up
+                    </a>
+                  </span>
+                </div>
+              </li>
+              <li
+                className="pro-menu-item"
+              >
+                <div
+                  className="pro-inner-item"
+                  role="button"
+                  tabIndex={0}
+                >
+                  <span
+                    className="pro-item-content"
+                  >
+                    <a
+                      className="w-100"
+                      href="/login"
+                      onClick={[Function]}
+                    >
+                      Login
+                    </a>
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-label="overlay"
+      className="overlay"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
+      tabIndex={0}
+    />
+  </div>
+</div>
+`;

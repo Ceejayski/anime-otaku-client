@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getFavoriteAnime } from '../../redux/actions/adminAnimes';
-import AnimeCard from '../animeCard';
+import AnimeCard from '../../components/animeCard';
 
 const Favourites = (props) => {
   const { getFave, faves } = props;

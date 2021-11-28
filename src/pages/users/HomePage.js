@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import AnimeCarousel from '../../components/animeCarousel';
+import AnimeCarousel from '../../containers/animeCarousel';
 import Jumbroton from '../../components/jumbotron';
 
 export default function HomePage() {

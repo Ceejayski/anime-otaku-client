@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import NavBar from '../components/navBar';
+import NavBar from '../containers/navBar';
 import PrivateRoutes from '../components/PrivateRoutes';
 import HomePage from './users/HomePage';
 import ShowAnimePage from './users/showAnimePage';

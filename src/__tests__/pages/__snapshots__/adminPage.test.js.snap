@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Correctly 1`] = `
+<div>
+  <div>
+    <nav
+      className="navbar navbar-expand navbar-light bg-light"
+    >
+      <div
+        className="container"
+      >
+        <a
+          className="brand navbar-brand ms-3"
+          href="/"
+          onClick={[Function]}
+        >
+          <img
+            alt="logo"
+            className="d-inline-block align-top"
+            height="40"
+            src="logo.png"
+          />
+          <span
+            className="ms-1 h5 ceviche"
+            style={
+              Object {
+                "color": "#EC5200",
+                "fontSize": "1.4em",
+                "lineHeight": "40px",
+              }
+            }
+          >
+            OTAKU
+          </span>
+        </a>
+        <button
+          aria-controls="basic-navbar-nav"
+          aria-label="Toggle navigation"
+          className="navbar-toggler collapsed"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="navbar-toggler-icon"
+          />
+        </button>
+        <div
+          aria-expanded={null}
+          className="navbar-collapse collapse"
+          id="basic-navbar-nav"
+        >
+          <div
+            className="mx-auto w-50"
+          />
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div
+    className="row gx-1"
+  >
+    <div
+      className="col-2"
+    >
+      <div
+        className="admin-sidebar"
+      >
+        <div
+          className="pro-sidebar"
+          style={
+            Object {
+              "minWidth": "none",
+            }
+          }
+        >
+          <div
+            className="pro-sidebar-inner"
+          >
+            <div
+              className="pro-sidebar-layout"
+            >
+              <nav
+                className="pro-menu shaped square inner-submenu-arrows"
+              >
+                <ul>
+                  <li
+                    className="pro-menu-item"
+                  >
+                    <div
+                      className="pro-inner-item"
+                      role="button"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="pro-item-content"
+                      >
+                        <a
+                          href="/"
+                          onClick={[Function]}
+                        >
+                           Home
+                        </a>
+                      </span>
+                    </div>
+                  </li>
+                  <li
+                    className="pro-menu-item"
+                  >
+                    <div
+                      className="pro-inner-item"
+                      role="button"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="pro-item-content"
+                      >
+                        <a
+                          href="/admin"
+                          onClick={[Function]}
+                        >
+                           Users
+                        </a>
+                      </span>
+                    </div>
+                  </li>
+                  <li
+                    className="pro-menu-item pro-sub-menu"
+                  >
+                    <div
+                      className="pro-inner-item"
+                      onClick={[Function]}
+                      onKeyPress={[Function]}
+                      role="button"
+                      tabIndex={0}
+                    >
+                      <span
+                        className="pro-item-content"
+                      >
+                        Animes
+                      </span>
+                      <span
+                        className="pro-arrow-wrapper"
+                      >
+                        <span
+                          className="pro-arrow"
+                        />
+                      </span>
+                    </div>
+                    <div
+                      className="react-slidedown pro-inner-list-item"
+                      onTransitionEnd={[Function]}
+                    >
+                      <div>
+                        <ul>
+                          <li
+                            className="pro-menu-item"
+                          >
+                            <div
+                              className="pro-inner-item"
+                              role="button"
+                              tabIndex={0}
+                            >
+                              <span
+                                className="pro-item-content"
+                              >
+                                 
+                                <a
+                                  href="/admin/anime"
+                                  onClick={[Function]}
+                                >
+                                   All Anime 
+                                </a>
+                                 
+                              </span>
+                            </div>
+                          </li>
+                          <li
+                            className="pro-menu-item"
+                          >
+                            <div
+                              className="pro-inner-item"
+                              role="button"
+                              tabIndex={0}
+                            >
+                              <span
+                                className="pro-item-content"
+                              >
+                                 
+                                <a
+                                  href="/admin/animes/new"
+                                  onClick={[Function]}
+                                >
+                                   Create new Anime 
+                                </a>
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div
+            aria-label="overlay"
+            className="overlay"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          />
+        </div>
+        ;
+      </div>
+    </div>
+    <div
+      className="col-10"
+    >
+      <div
+        className="container"
+        style={
+          Object {
+            "paddingTop": "20px",
+          }
+        }
+      >
+        <div>
+          <div>
+            <h5
+              className="text-center mb-3"
+            >
+               Users List 
+            </h5>
+            <div
+              className="sc-dlVxhl hkMDrI"
+            >
+              <div
+                className="sc-fKVqWL XlRpR"
+              >
+                <div
+                  className="sc-bdvvtL hLGqlg rdt_Table"
+                  disabled={false}
+                  role="table"
+                >
+                  <div
+                    className="sc-iwjdpV kntihR"
+                  >
+                    <div
+                      style={
+                        Object {
+                          "padding": "24px",
+                        }
+                      }
+                    >
+                      There are no records to display
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
