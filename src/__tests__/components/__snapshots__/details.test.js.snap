@@ -298,6 +298,7 @@ exports[`renders Correctly 1`] = `
       }
     >
       <a
+        className="details-btn d-flex text-white justify-content-center align-items-center btn"
         href="/login"
         onClick={[Function]}
       >

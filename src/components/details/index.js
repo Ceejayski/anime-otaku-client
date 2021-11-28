@@ -59,7 +59,7 @@ function Details({ data, favorite, addFave, removeFave }) {
               )}
             </>
           ) : (
-            <Link to="/login" className="details-btn"> Add to Favorites </Link>
+            <Link to="/login" className="details-btn d-flex text-white justify-content-center align-items-center btn"> Add to Favorites </Link>
           )}
         </div>
       </div>
