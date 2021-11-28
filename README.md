@@ -31,9 +31,13 @@
 ## Screenshots
 <div float = 'left'>
  <img src='screenshots/screenshot.png' alt="pic">
- <img src='screenshots/screenshot1.png' alt="pic">
- <img src='screenshots/screenshot2.png' alt="pic">
- <img src='screenshots/screenshot3.png' alt="pic">
+</div>
+<div float='left'>
+<img src='screenshots/screenshot1.png' alt="pic">
+</div>
+<div float='left'>
+<img src='screenshots/screenshot12.png' alt="pic">
+<img src='screenshots/screenshot3.png' alt="pic">
 </div>
 ## Live Demo Link <a name = "live-demo"></a>
 
