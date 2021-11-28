@@ -42,7 +42,7 @@
 ## Live Demo Link <a name = "live-demo"></a>
 
 ## See Live
-See live on [Netlify](https://findyourdreamanime.netlify.app)
+See live on [Netlify](https://silly-golick-1cef53.netlify.app/login)
 
 
 ## Available Scripts <a name= "available-scripts"></a>
@@ -124,7 +124,7 @@ Kindly ⭐ Star this project on GitHub — it helps!
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Ceajayski/anime-otaku-api/issues).
+Feel free to check the [issues page](https://github.com/Ceejayski/anime-otaku-client/issues).
 
 
 ## 👍 Show your support
