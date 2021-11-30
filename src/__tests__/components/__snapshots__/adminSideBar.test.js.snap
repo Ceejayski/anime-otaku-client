@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Correctly 1`] = `
+<div
+  className="admin-sidebar"
+>
+  <div
+    className="pro-sidebar"
+    style={
+      Object {
+        "minWidth": "none",
+      }
+    }
+  >
+    <div
+      className="pro-sidebar-inner"
+    >
+      <div
+        className="pro-sidebar-layout"
+      >
+        <nav
+          className="pro-menu shaped square inner-submenu-arrows"
+        >
+          <ul>
+            <li
+              className="pro-menu-item"
+            >
+              <div
+                className="pro-inner-item"
+                role="button"
+                tabIndex={0}
+              >
+                <span
+                  className="pro-item-content"
+                >
+                  <a
+                    href="/"
+                    onClick={[Function]}
+                  >
+                     Home
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li
+              className="pro-menu-item"
+            >
+              <div
+                className="pro-inner-item"
+                role="button"
+                tabIndex={0}
+              >
+                <span
+                  className="pro-item-content"
+                >
+                  <a
+                    href="/admin"
+                    onClick={[Function]}
+                  >
+                     Users
+                  </a>
+                </span>
+              </div>
+            </li>
+            <li
+              className="pro-menu-item pro-sub-menu"
+            >
+              <div
+                className="pro-inner-item"
+                onClick={[Function]}
+                onKeyPress={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <span
+                  className="pro-item-content"
+                >
+                  Animes
+                </span>
+                <span
+                  className="pro-arrow-wrapper"
+                >
+                  <span
+                    className="pro-arrow"
+                  />
+                </span>
+              </div>
+              <div
+                className="react-slidedown pro-inner-list-item"
+                onTransitionEnd={[Function]}
+              >
+                <div>
+                  <ul>
+                    <li
+                      className="pro-menu-item"
+                    >
+                      <div
+                        className="pro-inner-item"
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <span
+                          className="pro-item-content"
+                        >
+                           
+                          <a
+                            href="/admin/anime"
+                            onClick={[Function]}
+                          >
+                             All Anime 
+                          </a>
+                           
+                        </span>
+                      </div>
+                    </li>
+                    <li
+                      className="pro-menu-item"
+                    >
+                      <div
+                        className="pro-inner-item"
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <span
+                          className="pro-item-content"
+                        >
+                           
+                          <a
+                            href="/admin/animes/new"
+                            onClick={[Function]}
+                          >
+                             Create new Anime 
+                          </a>
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div
+      aria-label="overlay"
+      className="overlay"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
+      tabIndex={0}
+    />
+  </div>
+  ;
+</div>
+`;

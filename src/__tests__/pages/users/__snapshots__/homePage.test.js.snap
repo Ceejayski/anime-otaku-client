@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Correctly 1`] = `
+<div
+  className="user-page"
+>
+  <div
+    className="w-100 jumbotron d-flex align-items-center mb-5"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="text-white"
+      >
+        <h1>
+          Best Anime Review Site
+        </h1>
+        <p
+          className="w-100 lead"
+          style={
+            Object {
+              "maxWidth": "700px",
+            }
+          }
+        >
+          "Religion, ideology, resources, land, spite, love or just because… No matter how pathetic the reason, it’s enough to start war. War will never cease to exist… reasons can be thought up after the fact… Human nature pursues strife."
+          <strong>
+            ~ Yahiko Paine (Naruto Shippuden)
+          </strong>
+        </p>
+        <a
+          className="btn btn-lg text-white explore-btn"
+          onClick={[Function]}
+        >
+          Explore
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="px-3 container"
+  >
+    <h3
+      className="text-center"
+    >
+      Top Anime
+    </h3>
+    <div
+      className="w-100"
+      id="animes"
+    />
+  </div>
+</div>
+`;

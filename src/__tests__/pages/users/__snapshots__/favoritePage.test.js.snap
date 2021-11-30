@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Correctly 1`] = `
+<div
+  className="mt-5"
+>
+  <div
+    className="container"
+  >
+    <div
+      style={
+        Object {
+          "minHeight": "70vh",
+        }
+      }
+    >
+      <h3>
+         No Anime Added Yet! 
+      </h3>
+    </div>
+  </div>
+</div>
+`;

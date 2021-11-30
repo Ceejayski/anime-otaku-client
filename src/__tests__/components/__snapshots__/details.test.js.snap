@@ -1,0 +1,310 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Correctly 1`] = `
+<div
+  className="position-relative anime-data"
+  style={
+    Object {
+      "marginTop": "30px",
+    }
+  }
+>
+  <div
+    className="position-relative"
+  >
+    <img
+      alt="anime-pic"
+      className="w-100"
+      src="slide.jpg"
+      style={
+        Object {
+          "height": "50vh",
+        }
+      }
+    />
+    <div
+      className="position-absolute"
+      style={
+        Object {
+          "bottom": "5%",
+          "left": "5%",
+        }
+      }
+    >
+      <h6
+        className="text-white"
+      />
+      <div>
+        <span
+          className=""
+        >
+          <svg
+            className=""
+            height={13}
+            onClick={[Function]}
+            onMouseMove={[Function]}
+            onMouseOut={[Function]}
+            style={
+              Object {
+                "cursor": "default",
+                "transition": "transform 0.1s ease-out",
+              }
+            }
+            viewBox="0 0 100 100"
+            width={13}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient
+                id=""
+                x1="0"
+                x2="100%"
+                y1="0"
+                y2="0"
+              >
+                <stop
+                  offset="0%"
+                  stopColor="#ffd055"
+                />
+                <stop
+                  offset="0%"
+                  stopColor="#ffd055"
+                />
+                <stop
+                  offset="0%"
+                  stopColor="#ddd"
+                />
+              </linearGradient>
+            </defs>
+            <path
+              d="M50,0,64.69463130731182,29.774575140626315,97.55282581475768,34.54915028125263,73.77641290737884,57.72542485937368,79.38926261462366,90.45084971874736,50,75,20.61073738537635,90.45084971874738,26.223587092621162,57.72542485937369,2.447174185242318,34.549150281252636,35.30536869268816,29.774575140626318Z"
+              fill="url(#)"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <svg
+            className=""
+            height={13}
+            onClick={[Function]}
+            onMouseMove={[Function]}
+            onMouseOut={[Function]}
+            style={
+              Object {
+                "cursor": "default",
+                "transition": "transform 0.1s ease-out",
+              }
+            }
+            viewBox="0 0 100 100"
+            width={13}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient
+                id=""
+                x1="0"
+                x2="100%"
+                y1="0"
+                y2="0"
+              >
+                <stop
+                  offset="0%"
+                  stopColor="#ffd055"
+                />
+                <stop
+                  offset="0%"
+                  stopColor="#ffd055"
+                />
+                <stop
+                  offset="0%"
+                  stopColor="#ddd"
+                />
+              </linearGradient>
+            </defs>
+            <path
+              d="M50,0,64.69463130731182,29.774575140626315,97.55282581475768,34.54915028125263,73.77641290737884,57.72542485937368,79.38926261462366,90.45084971874736,50,75,20.61073738537635,90.45084971874738,26.223587092621162,57.72542485937369,2.447174185242318,34.549150281252636,35.30536869268816,29.774575140626318Z"
+              fill="url(#)"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <svg
+            className=""
+            height={13}
+            onClick={[Function]}
+            onMouseMove={[Function]}
+            onMouseOut={[Function]}
+            style={
+              Object {
+                "cursor": "default",
+                "transition": "transform 0.1s ease-out",
+              }
+            }
+            viewBox="0 0 100 100"
+            width={13}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient
+                id=""
+                x1="0"
+                x2="100%"
+                y1="0"
+                y2="0"
+              >
+                <stop
+                  offset="0%"
+                  stopColor="#ffd055"
+                />
+                <stop
+                  offset="0%"
+                  stopColor="#ffd055"
+                />
+                <stop
+                  offset="0%"
+                  stopColor="#ddd"
+                />
+              </linearGradient>
+            </defs>
+            <path
+              d="M50,0,64.69463130731182,29.774575140626315,97.55282581475768,34.54915028125263,73.77641290737884,57.72542485937368,79.38926261462366,90.45084971874736,50,75,20.61073738537635,90.45084971874738,26.223587092621162,57.72542485937369,2.447174185242318,34.549150281252636,35.30536869268816,29.774575140626318Z"
+              fill="url(#)"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <svg
+            className=""
+            height={13}
+            onClick={[Function]}
+            onMouseMove={[Function]}
+            onMouseOut={[Function]}
+            style={
+              Object {
+                "cursor": "default",
+                "transition": "transform 0.1s ease-out",
+              }
+            }
+            viewBox="0 0 100 100"
+            width={13}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient
+                id=""
+                x1="0"
+                x2="100%"
+                y1="0"
+                y2="0"
+              >
+                <stop
+                  offset="0%"
+                  stopColor="#ffd055"
+                />
+                <stop
+                  offset="0%"
+                  stopColor="#ffd055"
+                />
+                <stop
+                  offset="0%"
+                  stopColor="#ddd"
+                />
+              </linearGradient>
+            </defs>
+            <path
+              d="M50,0,64.69463130731182,29.774575140626315,97.55282581475768,34.54915028125263,73.77641290737884,57.72542485937368,79.38926261462366,90.45084971874736,50,75,20.61073738537635,90.45084971874738,26.223587092621162,57.72542485937369,2.447174185242318,34.549150281252636,35.30536869268816,29.774575140626318Z"
+              fill="url(#)"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <svg
+            className=""
+            height={13}
+            onClick={[Function]}
+            onMouseMove={[Function]}
+            onMouseOut={[Function]}
+            style={
+              Object {
+                "cursor": "default",
+                "transition": "transform 0.1s ease-out",
+              }
+            }
+            viewBox="0 0 100 100"
+            width={13}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient
+                id=""
+                x1="0"
+                x2="100%"
+                y1="0"
+                y2="0"
+              >
+                <stop
+                  offset="0%"
+                  stopColor="#ffd055"
+                />
+                <stop
+                  offset="0%"
+                  stopColor="#ffd055"
+                />
+                <stop
+                  offset="0%"
+                  stopColor="#ddd"
+                />
+              </linearGradient>
+            </defs>
+            <path
+              d="M50,0,64.69463130731182,29.774575140626315,97.55282581475768,34.54915028125263,73.77641290737884,57.72542485937368,79.38926261462366,90.45084971874736,50,75,20.61073738537635,90.45084971874738,26.223587092621162,57.72542485937369,2.447174185242318,34.549150281252636,35.30536869268816,29.774575140626318Z"
+              fill="url(#)"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container px-0"
+  >
+    <div
+      className="mx-auto mt-3"
+      style={
+        Object {
+          "width": "80%",
+        }
+      }
+    >
+      <p>
+        Tags:
+        
+      </p>
+      <h6>
+         About Anime
+      </h6>
+      <p>
+        
+      </p>
+    </div>
+    <div
+      className="w-100 position-sticky"
+      style={
+        Object {
+          "bottom": 0,
+        }
+      }
+    >
+      <a
+        className="details-btn d-flex text-white justify-content-center align-items-center btn"
+        href="/login"
+        onClick={[Function]}
+      >
+         Add to Favorites 
+      </a>
+    </div>
+  </div>
+</div>
+`;

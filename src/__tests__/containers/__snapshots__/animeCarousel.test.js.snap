@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Correctly 1`] = `
+Array [
+  <h3
+    className="text-center"
+  >
+    Top Anime
+  </h3>,
+  <div
+    className="w-100"
+    id="animes"
+  />,
+]
+`;

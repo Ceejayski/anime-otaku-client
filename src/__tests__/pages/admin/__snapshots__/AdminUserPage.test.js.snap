@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Correctly 1`] = `
+<div>
+  <div>
+    <h5
+      className="text-center mb-3"
+    >
+       Users List 
+    </h5>
+    <div
+      className="sc-dlVxhl hkMDrI"
+    >
+      <div
+        className="sc-fKVqWL XlRpR"
+      >
+        <div
+          className="sc-bdvvtL hLGqlg rdt_Table"
+          disabled={false}
+          role="table"
+        >
+          <div
+            className="sc-iwjdpV kntihR"
+          >
+            <div
+              style={
+                Object {
+                  "padding": "24px",
+                }
+              }
+            >
+              There are no records to display
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

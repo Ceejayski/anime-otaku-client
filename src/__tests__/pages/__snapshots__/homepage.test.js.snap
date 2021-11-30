@@ -1,0 +1,317 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Correctly 1`] = `
+<div>
+  <header>
+    <nav
+      className="transparent text-white px-3 d-md-block d-none navbar navbar-expand-md navbar-light fixed-top"
+    >
+      <div
+        className="text-white px-3 container"
+      >
+        <a
+          className="brand navbar-brand ms-3"
+          href="/"
+          onClick={[Function]}
+        >
+          <img
+            alt="logo"
+            className="d-inline-block align-top"
+            height="60"
+            src="logo.png"
+          />
+          <span
+            className="ms-1 h5 ceviche"
+            style={
+              Object {
+                "color": "#EC5200",
+                "fontSize": "1.4em",
+                "lineHeight": "60px",
+              }
+            }
+          >
+            OTAKU
+          </span>
+        </a>
+        <button
+          aria-controls="basic-navbar-nav"
+          aria-label="Toggle navigation"
+          className="navbar-toggler collapsed"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="navbar-toggler-icon"
+          />
+        </button>
+        <div
+          aria-expanded={null}
+          className="navbar-collapse collapse"
+          id="basic-navbar-nav"
+        >
+          <div
+            className="mx-auto w-50"
+          />
+          <div
+            className="me-3 navbar-nav"
+            onKeyDown={[Function]}
+          >
+            <a
+              className="nav-link"
+              href="/login"
+              onClick={[Function]}
+            >
+              Login
+            </a>
+            <a
+              className="nav-link"
+              href="/signup"
+              onClick={[Function]}
+            >
+              Signup
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav
+      className="d-md-none second-nav fixed-top"
+    >
+      <div
+        hidden={true}
+      >
+        <div
+          className="phone-sidebar"
+        >
+          <div
+            className="pro-sidebar"
+            style={Object {}}
+          >
+            <div
+              className="pro-sidebar-inner"
+            >
+              <div
+                className="pro-sidebar-layout"
+              >
+                <div
+                  className="pro-sidebar-header"
+                >
+                  <div
+                    className="logotext ms-3 mt-2 d-flex justify-content-between align-items-center"
+                    style={
+                      Object {
+                        "textTransform": "capitalize",
+                      }
+                    }
+                  >
+                    <p
+                      className="mb-0"
+                    >
+                      AnimeOtaku
+                    </p>
+                    <button
+                      aria-label="toggle"
+                      className="btn"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "border": 0,
+                          "outline": "none",
+                        }
+                      }
+                      type="button"
+                    >
+                      <i
+                        className="fas fa-bars"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div
+                  className="pro-sidebar-content"
+                >
+                  <nav
+                    className="pro-menu inner-submenu-arrows"
+                  >
+                    <ul>
+                      <li
+                        className="pro-menu-item"
+                      >
+                        <div
+                          className="pro-inner-item"
+                          role="button"
+                          tabIndex={0}
+                        >
+                          <span
+                            className="pro-item-content"
+                          >
+                            <a
+                              className="w-100"
+                              href="/"
+                              onClick={[Function]}
+                            >
+                              Home
+                            </a>
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        className="pro-menu-item"
+                      >
+                        <div
+                          className="pro-inner-item"
+                          role="button"
+                          tabIndex={0}
+                        >
+                          <span
+                            className="pro-item-content"
+                          >
+                            <a
+                              className="w-100"
+                              href="/signup"
+                              onClick={[Function]}
+                            >
+                              Sign up
+                            </a>
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        className="pro-menu-item"
+                      >
+                        <div
+                          className="pro-inner-item"
+                          role="button"
+                          tabIndex={0}
+                        >
+                          <span
+                            className="pro-item-content"
+                          >
+                            <a
+                              className="w-100"
+                              href="/login"
+                              onClick={[Function]}
+                            >
+                              Login
+                            </a>
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-label="overlay"
+              className="overlay"
+              onClick={[Function]}
+              onKeyPress={[Function]}
+              role="button"
+              tabIndex={0}
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="d-flex"
+      >
+        <button
+          aria-label="toggle"
+          className="btn"
+          onClick={[Function]}
+          style={
+            Object {
+              "border": 0,
+              "outline": "none",
+            }
+          }
+          type="button"
+        >
+          <i
+            className="fas fa-bars"
+          />
+        </button>
+        <div
+          className="sm-nav-brand ms-3"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <img
+              alt="logo"
+              className="d-inline-block align-top"
+              height="50"
+              src="logo.png"
+            />
+            <span
+              className="ms-1 h5 ceviche"
+              style={
+                Object {
+                  "color": "#EC5200",
+                  "fontSize": "1.4em",
+                  "lineHeight": "50px",
+                }
+              }
+            >
+              OTAKU
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div
+    className="user-page"
+  >
+    <div
+      className="w-100 jumbotron d-flex align-items-center mb-5"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="text-white"
+        >
+          <h1>
+            Best Anime Review Site
+          </h1>
+          <p
+            className="w-100 lead"
+            style={
+              Object {
+                "maxWidth": "700px",
+              }
+            }
+          >
+            "Religion, ideology, resources, land, spite, love or just because… No matter how pathetic the reason, it’s enough to start war. War will never cease to exist… reasons can be thought up after the fact… Human nature pursues strife."
+            <strong>
+              ~ Yahiko Paine (Naruto Shippuden)
+            </strong>
+          </p>
+          <a
+            className="btn btn-lg text-white explore-btn"
+            onClick={[Function]}
+          >
+            Explore
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="px-3 container"
+    >
+      <h3
+        className="text-center"
+      >
+        Top Anime
+      </h3>
+      <div
+        className="w-100"
+        id="animes"
+      />
+    </div>
+  </div>
+</div>
+`;

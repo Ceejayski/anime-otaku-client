@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Correctly 1`] = `
+<div
+  className="register-background-overlay"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="d-flex justify-content-center align-items-center w-100 mb-auto"
+      style={
+        Object {
+          "height": "100vh",
+          "marginTop": "-40px",
+        }
+      }
+    >
+      <div
+        className=" border-0 w-100"
+        style={
+          Object {
+            "maxWidth": "300px",
+          }
+        }
+      >
+        <h4
+          className="text-center"
+        >
+          Sign Up
+        </h4>
+        <p
+          className="text-center"
+        >
+          Hey there, Sign up and we take it up from there
+        </p>
+        <form
+          autoComplete="off"
+          className="w-100 mb-5"
+          id="new-User"
+          onSubmit={[Function]}
+        >
+          <div>
+            <div
+              className="form-group"
+            >
+              <div>
+                <input
+                  autoComplete="new-user"
+                  className="form-control mb-4"
+                  name="username"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="Username"
+                  style={
+                    Object {
+                      "borderRadius": "25px",
+                    }
+                  }
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="form-group mb-4"
+            >
+              <div>
+                <input
+                  autoComplete="new-email"
+                  className="form-control"
+                  name="email"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="Email"
+                  style={
+                    Object {
+                      "borderRadius": "25px",
+                    }
+                  }
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="form-group mb-4"
+            >
+              <div>
+                <input
+                  autoComplete="new-password"
+                  className="form-control"
+                  name="password"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="Password"
+                  style={
+                    Object {
+                      "borderRadius": "25px",
+                    }
+                  }
+                  type="password"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="form-group text-center"
+            >
+              <button
+                className="btn btn-primary btn-block btn-lg border-0"
+                style={
+                  Object {
+                    "backgroundColor": "#FF5617",
+                    "borderRadius": "25px",
+                  }
+                }
+                type="submit"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+          <button
+            disabled={true}
+            style={
+              Object {
+                "display": "none",
+              }
+            }
+          />
+        </form>
+        <p
+          className="text-center"
+        >
+           
+          Already have an account?
+           
+          <a
+            href="/login"
+            onClick={[Function]}
+          >
+            Login
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
