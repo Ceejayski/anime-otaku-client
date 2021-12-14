@@ -2,7 +2,7 @@
 
 ## Overview
 
->The **ANIME OTAKU** is a anime review web app that displays a list of animes for anime enthusiasts to view. User can choose to save their favorite animes and come back view them later.
+>The **ANIME OTAKU** is an anime review web app that displays a list of animes for anime enthusiasts to view. User can choose to save their favorite animes and come back view them later.
 >The data is served from the API built using Ruby on Rails framework.
 >
 <div align="center">
